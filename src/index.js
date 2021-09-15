@@ -5,7 +5,7 @@ const app = express()
 const http = require('http')
 const server = http.createServer(app)
 
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT || 4000
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
