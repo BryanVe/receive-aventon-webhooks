@@ -16,9 +16,19 @@ app.get('/', (req, res) => res.json({
   message: 'Server is running successfully'
 }))
 
-app.get('/webhook', (req, res) => {
-  res.json({
-    message: 'aea'
+app.post('/webhook/:state', (req, res) => {
+  const state = req.params.state
+  const payload = req.body
+
+  const c = {
+    state,
+    payload
+  }
+
+  console.log(log)
+
+  return res.status(200).send({
+    log
   })
 })
 
