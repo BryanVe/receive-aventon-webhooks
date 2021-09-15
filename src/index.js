@@ -20,7 +20,7 @@ app.post('/webhook/:state', (req, res) => {
   const state = req.params.state
   const payload = req.body
 
-  const c = {
+  const log = {
     state,
     payload
   }
