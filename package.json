@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "nodemon -r dotenv/config src/index.js"
+    "start": "nodemon -r dotenv/config src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
